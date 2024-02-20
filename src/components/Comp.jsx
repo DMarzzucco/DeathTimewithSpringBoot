@@ -7,7 +7,8 @@ export const HomeCart = ({ img, title, span }) => {
             <div className="flex justify-center items-center">
                 <img src={img} alt="" />
             </div>
-            <div className="flex flex-col justify-end items-start">
+            <div className="flex flex-col justify-end
+             items-start">
                 <h3 className="text-6xl">
                     {title}
                 </h3>
@@ -20,7 +21,7 @@ export const HomeCart = ({ img, title, span }) => {
     )
 }
 // 
-export const TogAside=({src, name })=>{
+export const TogAside = ({ src, name }) => {
     return (
         <div>
             <Link to={src}>{name}</Link>
