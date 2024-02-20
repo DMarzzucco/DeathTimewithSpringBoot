@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export const HomeCart = ({ img, title, span }) => {
     return (
         <div className="home-cart grid grid-cols-2
@@ -14,6 +16,14 @@ export const HomeCart = ({ img, title, span }) => {
                 </span>
 
             </div>
+        </div>
+    )
+}
+// 
+export const TogAside=({src, name })=>{
+    return (
+        <div>
+            <Link to={src}>{name}</Link>
         </div>
     )
 }
