@@ -8,28 +8,35 @@ function Header() {
     }
     return (
         <header>
-            <div>
-                <h1 className="font-black text-5xl text-center md:w-2/3 mx-auto">
-                    Seguimiento Pacientes {''}
-                    <span className="text-indigo-600">Veterinaria</span>
-                </h1>
-                <Link to={'/'}>inicio</Link>
-            </div>
-            <div className="flex">
-                <button onClick={desplegarMenu} className="bg-blue-500
-                 hover:bg-blue-700 text-white font-bold py-2 
-                 px-4 rounded">
-                    boton
+            <div className="flex flex-row items-center">
+                <button onClick={desplegarMenu} className="
+                 text-white font-bold py-2 
+                 px-4 rounded"
+                >
+                    <i className="fa-solid fa-bars"></i>
                 </button>
-                <aside className={`${isDeplegad ? 'translate-x-0' :
-                    '-translate-x-full'}bg-gray-200 h-screen w-64 
-                flex-shrink-0 transition-transform duration-300`}>
-                    <TogAside
-                        src="/About"
-                        name="About"
-                    />
-                </aside>
+               <div className="p-1">
+                 <Link to={"/"}>
+                     <img src="/public/img/Nav.png"
+                     className="w-9 h-10" alt="" />
+                 </Link>
+               </div>
             </div>
+            {/*  */}
+            {isDeplegad ?
+                <aside className="flex flex-col z-10 absolute 
+                w-36 h-full bg-teal-600 justify-center items-center"
+                >
+                    <div className="w-full h-72 flex flex-col
+                     justify-center items-center">
+                        <TogAside src="/About" name="About" />
+                        <TogAside src="/Project" name="Project" />
+                        <TogAside src='/Tc' name='Tc' />
+                        <TogAside src='/Contact' name='Contact' />
+                    </div>
+                </aside>
+                : null
+            }
         </header>)
 }
 export default Header;

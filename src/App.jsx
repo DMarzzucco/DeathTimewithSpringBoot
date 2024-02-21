@@ -26,21 +26,24 @@ function App() {
             <Footer />
           </>
         } />
-        <Route path='/About' element={
+        {/* Project */}
+        <Route path='/Project' element={
           <>
             <Header />
             <Project />
             <Footer />
           </>
         } />
-        <Route path='/About' element={
+        {/* Tc */}
+        <Route path='/Tc' element={
           <>
             <Header />
             <Tc />
             <Footer />
           </>
         } />
-        <Route path='/About' element={
+        {/* Contact */}
+        <Route path='/Contact' element={
           <>
             <Header />
             <Contact />

@@ -1,8 +1,11 @@
+import './Pages.scss'
 function Projects() {
     return (
-        <div>
-            <h1>Projects</h1>
-        </div>
+        <main className='ProjectMain'>
+            <div>
+                <h1>Projects</h1>
+            </div>
+        </main>
     )
 
 }

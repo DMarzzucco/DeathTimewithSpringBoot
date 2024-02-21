@@ -23,8 +23,11 @@ export const HomeCart = ({ img, title, span }) => {
 // 
 export const TogAside = ({ src, name }) => {
     return (
-        <div>
-            <Link to={src}>{name}</Link>
+        <div className=" w-full h-full flex flex-col 
+            justify-center items-center bg-black 
+            border border-current ">
+            <Link to={src} className=" w-full h-full
+             flex justify-center items-center">{name}</Link>
         </div>
     )
 }

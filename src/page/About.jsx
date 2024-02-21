@@ -1,8 +1,11 @@
+import './Pages.scss'
 function About() {
     return (
-        <div>
-            <h1>About</h1>
-        </div>
+       <main className="AboutMain">
+         <div>
+             <h1>About</h1>
+         </div>
+       </main>
     )
 }
 export default About;
