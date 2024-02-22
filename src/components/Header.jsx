@@ -25,9 +25,9 @@ function Header() {
             {/*  */}
             {isDeplegad ?
                 <aside className="flex flex-col z-10 absolute 
-                w-36 h-full bg-teal-600 justify-center items-center"
+                w-36 h-full justify-center items-center"
                 >
-                    <div className="w-full h-72 flex flex-col
+                    <div className="w-full h-60 flex flex-col
                      justify-center items-center">
                         <TogAside src="/About" name="About" />
                         <TogAside src="/Project" name="Project" />

@@ -4,4 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(#272a30,#272a3000), url(/public/img/fondo.jpeg);
+    background-position: center;
+    background-size: cover;
 }

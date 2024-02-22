@@ -3,11 +3,43 @@
 @tailwind utilities;
 @tailwind variants;
 
-
-
 body {
   margin: 0;
   place-items: center;
   background-color: #272a30;
   color: #c3cbd3;
+}
+
+/* scroll */
+/* chrome */
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: #272a30;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  background-color: #272a30;
+}
+
+/* Moz */
+::-moz-scrollbar {
+  width: 2px;
+  background-color: #272a30;
+}
+
+::-moz-scrollbar-thumb {
+  width: 2px;
+  background-color: #272a30;
+}
+
+/* Edge */
+::-ms-scrollbar {
+  width: 2px;
+  background-color: #272a30;
+}
+
+::-ms-scrollbar-thumb {
+  width: 2px;
+  background-color: #272a30;
 }
