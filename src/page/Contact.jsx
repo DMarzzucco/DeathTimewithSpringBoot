@@ -1,4 +1,3 @@
-import './Pages.scss'
 function Contact() {
     return (
         <main className='ContactMain'>

@@ -1,5 +1,4 @@
-import { AboutDt } from '../components/Comp';
-import './Pages.scss'
+import AboutDt from '../components/AboutDT';
 function About() {
   return (
     <main className="AboutMain">
@@ -14,12 +13,12 @@ function About() {
               'sdsd',
               'sdsd',
             ]} />
-            <AboutDt ico={'ico'} title={'title'} items={[
+            <AboutDt ico={<i class="fa-solid fa-user-pen"></i>} title={'Skill'} items={[
               'sdsd',
               'sdsd',
               'sdsd',
             ]} />
-            <AboutDt ico={'ico'} title={'title'} items={[
+            <AboutDt ico={<i class="fa-solid fa-hourglass-start"></i>} title={'Hobbies'} items={[
               'sdsd',
               'sdsd',
               'sdsd',

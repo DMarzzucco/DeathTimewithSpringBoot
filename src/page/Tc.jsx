@@ -1,4 +1,3 @@
-import './Pages.scss'
 function Tc() {
     return (
         <main className='TcMain'>

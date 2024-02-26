@@ -12,3 +12,52 @@
         padding: 9px 0;
     }
 }
+
+.AboutMain {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#272a30, #272a3000), url(/public/img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .info {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 10fr);
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+.ProjectMain {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TcMain {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactMain {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

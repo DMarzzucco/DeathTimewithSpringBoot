@@ -73,33 +73,3 @@ export const Study = ({ ico, title, items }) => {
         </>
     )
 }
-
-export const AboutDt = ({ ico, title, items }) => {
-    return (
-        <>
-            <h1>{ico}{title}</h1>
-            <div>
-                <details>
-                    <summary>
-                        <i className="fa-solid fa-chevron-down"></i>
-                    </summary>
-                    <div>
-                        <ul>
-                            <AbLi items={items} />
-                        </ul>
-                    </div>
-                </details>
-            </div>
-        </>
-    )
-}
-export const AbLi = ({ items }) => {
-    if (!items) return null;
-    return (
-        <>
-            {items.map((items, index) => (
-                <li key={index}>{items}</li>
-            ))}
-        </>
-    );
-}

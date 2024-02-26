@@ -1,4 +1,3 @@
-import './Pages.scss'
 function Projects() {
     return (
         <main className='ProjectMain'>
