@@ -5,7 +5,8 @@ function Footer() {
     return (
         <footer className="w-full  flex flex-col justify-center
         items-center">
-            <div className="grid grid-cols-2 my-3 justify-center items-center">
+            <div className="grid grid-cols-2 my-3 justify-center items-center
+            footer:flex footer:flex-col">
                 <img src="/public/img/logo1.png" alt=""
                     className="w-56 m-1" />
                 <div>
@@ -33,11 +34,11 @@ function Footer() {
             </div>
             {/*  */}
             <div className="flex my-px">
-                <p>
+                <p className="footer:text-10">
                     &copy; 2024
                 </p>
-                <span className="mx-1 font-mono">SysteMarzz</span>
-                <p>
+                <span className="mx-1 font-mono footer:text-10">SysteMarzz</span>
+                <p className="footer:text-10">
                     All rights reserved Made by Dario Marzzucco
                 </p>
 

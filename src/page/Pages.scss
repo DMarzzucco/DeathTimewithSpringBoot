@@ -2,7 +2,26 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    background: url(/public/img/fondo2.jpg);
+    color: #272a30;
     align-items: center;
+    justify-content: center;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .info {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 10fr);
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 .ProjectMain {

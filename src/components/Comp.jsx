@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom"
 
-export const HomeCart = ({}) => {
+export const HomeCart = ({ }) => {
     return (
         <div className="w-auto home-cart flex flex-col
          justify-center items-center">
-            <div className="w-auto grid grid-cols-2 gap-8 justify-center
-             items-center my-8">
-                <img src="/public/img/img1.png" alt="" />
+            <div className="w-auto grid grid-cols-2 gap-8 
+            justify-center items-center my-8 ">
+                <img src="/public/img/img1.png" alt=""
+                    className="home:w-20" />
                 <img src="/public/img/Nav.png" alt=""
-                    className="w-60" />
+                    className="w-60 home:w-20" />
             </div>
             <div className="flex flex-col justify-center
              items-center">
                 <img src="/public/img/Home.png" alt=""
-                    className="w-96" />
-                <span className="text-2xl w-auto">
+                    className="w-96 home:w-60" />
+                <span className="text-2xl w-auto home:text-15
+                 home:p-2 home:text-center">
                     Programmer||Web Developer||Graphic Designer
                 </span>
 
@@ -23,12 +25,15 @@ export const HomeCart = ({}) => {
     )
 }
 // 
-export const TogAside = ({ src, name }) => {
+export const TogAside = ({ src, name, ico }) => {
     return (
-        <div className=" w-full h-full flex flex-col 
-            justify-center items-center border border-current ">
+        <div className=" w-full h-full flex flex-row 
+        justify-center items-center border border-current ">
             <Link to={src} className=" w-full h-full
-             flex justify-center items-center">{name}</Link>
+             flex items-center justify-between p-1">
+                {ico}
+                <p>{name}</p>
+            </Link>
         </div>
     )
 }
@@ -45,4 +50,56 @@ export const FooterInf = ({ ico, inf }) => {
             <p>{inf}</p>
         </div>)
 }
+export const Study = ({ ico, title, items }) => {
+    return (
+        <>
+            <h1>{ico}{title}</h1>
+            <div>
+                <details>
+                    <summary>
+                        <i className="fa-solid fa-chevron-down"></i>
+                    </summary>
+                    <div>
+                        <article>
+                            <img src={src} alt="" />
+                            {inst}
+                        </article>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </>
+    )
+}
 
+export const AboutDt = ({ ico, title, items }) => {
+    return (
+        <>
+            <h1>{ico}{title}</h1>
+            <div>
+                <details>
+                    <summary>
+                        <i className="fa-solid fa-chevron-down"></i>
+                    </summary>
+                    <div>
+                        <ul>
+                            <AbLi items={items} />
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </>
+    )
+}
+export const AbLi = ({ items }) => {
+    if (!items) return null;
+    return (
+        <>
+            {items.map((items, index) => (
+                <li key={index}>{items}</li>
+            ))}
+        </>
+    );
+}
