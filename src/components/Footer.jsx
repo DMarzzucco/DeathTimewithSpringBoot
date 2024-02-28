@@ -33,11 +33,11 @@ function Footer() {
                 <Link to={'https://github.com/DMarzzucco/SysteMarzz.git'}>SOURCE</Link>
             </div>
             {/*  */}
-            <div className="flex my-px">
+            <div className="flex my-px text-Gr">
                 <p className="footer:text-10">
                     &copy; 2024
                 </p>
-                <span className="mx-1 font-mono footer:text-10">SysteMarzz</span>
+                <span className="mx-1 font-mono footer:text-10 text-white">SysteMarzz</span>
                 <p className="footer:text-10">
                     All rights reserved Made by Dario Marzzucco
                 </p>

@@ -28,7 +28,7 @@ export const HomeCart = ({ }) => {
 export const TogAside = ({ src, name, ico }) => {
     return (
         <div className=" w-full h-full flex flex-row 
-        justify-center items-center border border-current ">
+        justify-center items-center hover:bg-sta hover:text-blackGray">
             <Link to={src} className=" w-full h-full
              flex items-center justify-between p-1">
                 {ico}
@@ -48,28 +48,7 @@ export const FooterInf = ({ ico, inf }) => {
         <div className="flex m-1">
             <span className="mx-2">{ico}</span>
             <p>{inf}</p>
-        </div>)
-}
-export const Study = ({ ico, title, items }) => {
-    return (
-        <>
-            <h1>{ico}{title}</h1>
-            <div>
-                <details>
-                    <summary>
-                        <i className="fa-solid fa-chevron-down"></i>
-                    </summary>
-                    <div>
-                        <article>
-                            <img src={src} alt="" />
-                            {inst}
-                        </article>
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </div>
-                </details>
-            </div>
-        </>
+        </div>
     )
 }
+
