@@ -64,11 +64,81 @@
 
 
 .ProjectMain {
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#272a309d, #272a30), url(public/img/ProjBack.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .ProjFirst {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+
+        .contend {
+            padding: 30px;
+            display: flex;
+            width: 100%;
+            justify-content: start;
+            align-items: center;
+            font-family: Jetbrains Mono;
+
+            @media screen and (max-width: 600px) {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+            }
+
+            h1 {
+                font-size: 60px;
+                margin: 0 10px;
+
+                @media screen and (max-width: 329px) {
+                    font-size: 30px;
+                }
+
+
+            }
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .ProjList {
+        display: grid;
+        grid-template-columns: repeat(3, 10fr);
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width:952px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+.MyGit {
+    width: 100%;
+    height: auto;
+    background: #272a30;
+    padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #969696;
 }
+
 
 .TcMain {
     height: 100vh;
@@ -78,7 +148,7 @@
 }
 
 .ContactMain {
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -51,4 +51,29 @@ export const FooterInf = ({ ico, inf }) => {
         </div>
     )
 }
+export const InpForm = ({ type, name, placeholder, pattern, title }) => {
+    return (
+        <input
+            type={type}
+            name={name}
+            placeholder={placeholder}
+            pattern={pattern}
+            title={title}
+            required
+            className="w-full p-2 m-2 border rounded-lg border-Gr bg-blackGray"
+        />
 
+    )
+}
+export const Lipro = ({ title, cont }) => {
+    return (
+        <>
+            <li className="flex flex-row items-center">
+                {title}
+                <p className="mx-2 text-Gr text-15">
+                    {cont}
+                </p>
+            </li>
+        </>
+    )
+}
