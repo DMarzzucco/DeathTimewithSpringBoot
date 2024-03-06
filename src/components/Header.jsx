@@ -39,7 +39,7 @@ function Header() {
                      justify-center items-center p-2 border-b border-Gr" onClick={close}>
                         <TogAside ico={<i className="fa-solid fa-address-card"></i>} src="/About" name="About" />
                         <TogAside ico={<i className="fa-solid fa-diagram-project"></i>} src="/Project" name="Project" />
-                        <TogAside ico={<i className="fa-solid fa-code"></i>} src='/Tc' name='Tc' />
+                        <TogAside ico={<i className="fa-solid fa-code"></i>} src='/Tc' name='Technology' />
                         <TogAside ico={<i className="fa-solid fa-phone"></i>} src='/Contact' name='Contact' />
                     </div>
                     <div className="p-2 text-Gr">

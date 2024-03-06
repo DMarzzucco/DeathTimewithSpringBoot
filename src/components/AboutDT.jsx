@@ -17,7 +17,8 @@ export const AboutD = ({ ico, title, items }) => {
                 <h1 className="px-3 text-20">{title}</h1>
             </div>
             <details className="bg-Bg2 w-full">
-                <summary className="list-none cursor-pointer text-center">
+                <summary className="list-none cursor-pointer text-center
+                hover:bg-sta hover:text-Bg2">
                     <i className="fa-solid fa-chevron-down"></i>
                 </summary>
                 <div className="text-blackGray bg-sta">
@@ -61,7 +62,7 @@ export const Study = ({ ico, title }) => {
                 <h1 className="px-3 text-20">{title}</h1>
             </div>
             <details className="bg-Bg2 w-full">
-                <summary className="list-none cursor-pointer text-center">
+                <summary className="list-none cursor-pointer text-center hover:bg-sta hover:text-Bg2">
                     <i className="fa-solid fa-chevron-down"></i>
                 </summary>
                 <div className="text-blackGray bg-sta flex flex-col justify-center items-center">

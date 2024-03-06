@@ -15,14 +15,14 @@ function Projects() {
                         title={'Piscoterapia Individual'}
                         img={'public/img/proyecto4.jpg'}
                         tools={[
-                            <a className="fa-brands fa-html5" style={{ color: '#e57915' }}></a>,
-                            <a className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></a>,
-                            <a className="fa-brands fa-js" style={{ color: '#FFE118' }}></a>,
-                            <a className="fa-brands fa-sass" style={{ color: 'pink', margin: '0 3px' }}></a>
+                            <i className="fa-brands fa-html5" style={{ color: '#e57915' }}></i>,
+                            <i className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></i>,
+                            <i className="fa-brands fa-js" style={{ color: '#FFE118' }}></i>,
+                            <i className="fa-brands fa-sass" style={{ color: 'pink', margin: '0 3px' }}></i>
                         ]}
                         fram={[
                             <div className="flex itemes-center">
-                                <a className="fa-brands fa-react" style={{ color: '#17FFEA' }}></a>
+                                <i className="fa-brands fa-react" style={{ color: '#17FFEA' }}></i>
                                 <img src="public/img/tailwindcss.png" className="w-4 h-4 mx-1"></img>
                             </div>
                         ]}
@@ -33,9 +33,9 @@ function Projects() {
                         title={'Pong'}
                         img={'public/img/proyect2.jpg'}
                         tools={[
-                            <a className="fa-brands fa-html5" style={{ color: '#e57915' }}></a>,
-                            <a className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></a>,
-                            <a className="fa-brands fa-js" style={{ color: '#FFE118' }}></a>,
+                            <i className="fa-brands fa-html5" style={{ color: '#e57915' }}></i>,
+                            <i className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></i>,
+                            <i className="fa-brands fa-js" style={{ color: '#FFE118' }}></i>,
                         ]}
                         fram={'None'}
                         dat={'12-05-2022'}
@@ -45,9 +45,21 @@ function Projects() {
                         title={'Atrapame si Puedes'}
                         img={'public/img/proyect5.jpg'}
                         tools={[
-                            <a className="fa-brands fa-html5" style={{ color: '#e57915' }}></a>,
-                            <a className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></a>,
-                            <a className="fa-brands fa-js" style={{ color: '#FFE118' }}></a>,
+                            <i className="fa-brands fa-html5" style={{ color: '#e57915' }}></i>,
+                            <i className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></i>,
+                            <i className="fa-brands fa-js" style={{ color: '#FFE118' }}></i>,
+                        ]}
+                        fram={'None'}
+                        dat={'13-09-2022'}
+                        typ={'Game'}
+                    />
+                    <ProjectCard
+                        title={'Atrapame si Puedes'}
+                        img={'public/img/proyect5.jpg'}
+                        tools={[
+                            <i className="fa-brands fa-html5" style={{ color: '#e57915' }}></i>,
+                            <i className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></i>,
+                            <i className="fa-brands fa-js" style={{ color: '#FFE118' }}></i>,
                         ]}
                         fram={'None'}
                         dat={'13-09-2022'}

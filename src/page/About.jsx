@@ -3,8 +3,8 @@ function About() {
   return (
     <main className="AboutMain">
       <section className='InfeCont'>
-        <div className='flex w-full justify-center text-60 p-10'>
-          <h1>About Me</h1>
+        <div className='flex w-full justify-top text-60 py-10 px-2'>
+          <h1 className='font-jet text-center'>About Me</h1>
         </div>
         <div className='grid grid-cols-3 gap-4 About:flex About:flex-col'>
           <Study ico={<i className="fa-solid fa-graduation-cap"></i>} title={'Studies'} />
@@ -28,7 +28,12 @@ function About() {
         </div>
       </section>
       <section className='CV'>
-        <h2>Download Resume in Spanish</h2>
+        <div className='flex flex-col px-2 border-r border-sta mini2:border-none'>
+          <h2>Curriculum</h2>
+          <p className='w-tre text-Gr mini2:w-auto'>If you need my resume, you can download it by clicking the following button  </p>
+        </div>
+        <img src="/public/img/cvb.png" alt="" className=' mini3:hidden '/>
+        <img src="/public/img/cvb1.png" alt="" className='hidden mini3:block' />
         <a href='public/img/c.png' download="">
           <button className='text-30 p-5 rounded-full hover:bg-sta hover:text-Bg2 '>
             <i className="fa-solid fa-chevron-down"></i>

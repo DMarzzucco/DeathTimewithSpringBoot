@@ -66,14 +66,35 @@ export const InpForm = ({ type, name, placeholder, pattern, title }) => {
     )
 }
 export const Lipro = ({ title, cont }) => {
+    
+
     return (
         <>
             <li className="flex flex-row items-center">
                 {title}
-                <p className="mx-2 text-Gr text-15">
+                <div className="mx-2 text-Gr text-15">
                     {cont}
-                </p>
+                </div>
             </li>
         </>
     )
 }
+// export const Lipro = ({ title, cont }) => {
+//     if (!title || !cont) return null;
+//     return (
+//         <>
+//             {Array.isArray(cont) ? (
+//                 cont.map((item, index) => (
+//                     <li key={index}>
+//                         {title}:{item}
+//                     </li>
+//                 ))
+//             ) : (
+//                 <li>
+//                     {title}:{cont}
+//                 </li>
+//             )
+//             }
+//         </>
+//     )
+// }

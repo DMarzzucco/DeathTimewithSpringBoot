@@ -10,6 +10,8 @@ export default {
         'footer': { 'max': '500px' },
         'home': { 'max': '500px' },
         'About': { 'max': '950px' },
+        'mini3': { 'max': '478px' },        
+        'mini2': { 'max': '330px' },
         'mini': { 'max': '300px' }
       },
       fontSize: {
