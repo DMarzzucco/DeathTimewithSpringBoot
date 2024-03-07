@@ -10,7 +10,7 @@ export default {
         'footer': { 'max': '500px' },
         'home': { 'max': '500px' },
         'About': { 'max': '950px' },
-        'mini3': { 'max': '478px' },        
+        'mini3': { 'max': '478px' },
         'mini2': { 'max': '330px' },
         'mini': { 'max': '300px' }
       },
@@ -29,10 +29,10 @@ export default {
         'jet': 'Jetbrains Mono'
       },
       width: {
-        '100': '100px',
         'tre': '300px',
         'doshMed': '240px',
         'dosh': '200px',
+        '100': '100px',
       },
       height: {
         'All': '100vh',
@@ -52,7 +52,8 @@ export default {
       },
       borderRadius: {
         '50': '50%',
-        '30': '30px'
+        '30': '30px',
+        '10': '10px',
       },
       boxShadow: {
         'den': '-24px 0px, 24px 0px',

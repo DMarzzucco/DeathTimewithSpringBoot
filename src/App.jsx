@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.scss'
 import { Home, About, Project, Tc, Contact } from './page';
-import { Footer, Header } from './components';
+import { Footer, Header, MenuTc } from './components';
 
 function App() {
 
@@ -38,6 +38,7 @@ function App() {
         <Route path='/Tc' element={
           <>
             <Header />
+            <MenuTc/>
             <Tc />
             <Footer />
           </>

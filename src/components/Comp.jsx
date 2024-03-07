@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
 
 export const HomeCart = ({ }) => {
@@ -63,6 +64,15 @@ export const InpForm = ({ type, name, placeholder, pattern, title }) => {
             className="w-full p-2 m-2 border rounded-lg border-Gr bg-blackGray"
         />
 
+    )
+}
+export const LiMenu= ({ico, name, color }) =>{
+    return (
+        <li className="flex flex-row w-full items-center p-3 border-b border-blackGray
+        hover:bg-blackGray hover:text-sta cursor-pointer">
+            <FontAwesomeIcon icon={ico} style={{color}}/>
+            <p className="mx-2">{name}</p>
+        </li>
     )
 }
 export const Lipro = ({ title, cont }) => {
