@@ -8,14 +8,14 @@ function MenuTc() {
     const menuRef = useRef(null);
 
     useEffect(() => {
-     const handleClickOutside = (e) => {
+     const clickOut = (e) => {
             if (menuRef.current && !menuRef.current.contains(e.target)) {
                 setIsDesplegad(false);
             }
         };
-        document.addEventListener('mousedown', handleClickOutside);
+        document.addEventListener('mousedown', clickOut);
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('mousedown', clickOut);
         };
 
     }, []);

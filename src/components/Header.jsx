@@ -23,7 +23,7 @@ function Header() {
     const close = () => { setIsDesplegad(false); }
     return (
         <header>
-            <div className="flex flex-row items-center" ref={menuRef}>
+            <div className="flex flex-row items-center" >
                 <button onClick={desplegarMenu} className="
                  text-white font-bold py-2 
                  px-4 rounded"
