@@ -1,13 +1,29 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { TogAside } from "./Comp";
 function Header() {
     const [isDeplegad, setIsDesplegad] = useState(false);
+    const menuRef = useRef(null);
+
+    useEffect(() => {
+        const clickOutside = (e) => {
+            if (menuRef.current && !menuRef.current.contains(e.target)) {
+                setIsDesplegad(false);
+            }
+        };
+        document.addEventListener('mousedown', clickOutside);
+        return () => {
+            document.removeEventListener('mousedown', clickOutside);
+        };
+
+
+    }, []);
+
     const desplegarMenu = () => { setIsDesplegad(!isDeplegad); }
     const close = () => { setIsDesplegad(false); }
     return (
         <header>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center" ref={menuRef}>
                 <button onClick={desplegarMenu} className="
                  text-white font-bold py-2 
                  px-4 rounded"
