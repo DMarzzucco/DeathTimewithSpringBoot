@@ -1,9 +1,9 @@
 function JavaScript () {
     return (
-        <div>
+        <section className="w-full h-All bg-black">
             <h1 className="text-white">JasdsdsdvaScript</h1>
             
-        </div>
+        </section>
     )
 }
 export default JavaScript;

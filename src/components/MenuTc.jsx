@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { LiMenu } from './Comp';
 import { faHtml5, faCss3, faSquareJs, faPenToSquare, faDatabase } from "./Iconos";
+import Up from './Up';
 
 
 function MenuTc() {
@@ -8,7 +9,7 @@ function MenuTc() {
     const menuRef = useRef(null);
 
     useEffect(() => {
-     const clickOut = (e) => {
+        const clickOut = (e) => {
             if (menuRef.current && !menuRef.current.contains(e.target)) {
                 setIsDesplegad(false);
             }
@@ -24,7 +25,7 @@ function MenuTc() {
     const closeMenu = () => { setIsDesplegad(false); }
     return (
         <>
-            <div ref={menuRef} className='flex flex-col fixed right-0 justify-end items-ned m-9'>
+            <div className='flex flex-col fixed right-0 justify-end  m-9'>
                 <button onClick={desplgMenu} className='flex  justify-center items-center
                 bg-sta text-Bg2 px-5 hover:bg-blackGray hover:text-sta hover:border
                 hover:border-sta rounded-t-10 '>
@@ -34,15 +35,16 @@ function MenuTc() {
                     </p>
                 </button>
                 {desplegarMenu ?
-                    <ul onClick={closeMenu} className='bg-sta text-blackGray'>
-                        <LiMenu ico={faHtml5} color={'#F16529'}  name='HTML'/>
-                        <LiMenu ico={faCss3} color={'#1572B6'}  name='CSS'/>
-                        <LiMenu ico={faSquareJs} color={'#FFBF00'}  name='JavaScript'/>
-                        <LiMenu ico={faPenToSquare} color={'#5571B9'}  name='Graphic Desing'/>
-                        <LiMenu ico={faDatabase} color={''}  name='Data Base'/>
+                    <ul onClick={closeMenu} className='bg-sta text-blackGray'
+                        ref={menuRef}>
+                        <LiMenu ico={[faHtml5, faCss3]} color={['#F16529', '#2965f1']} name='HTML/CSS' hrf={'#htm'} />
+                        <LiMenu ico={[faSquareJs]} color={['#FFBF00']} name='JavaScript' />
+                        <LiMenu ico={[faPenToSquare]} color={['#5571B9']} name='Graphic Desing' />
+                        <LiMenu ico={[faDatabase]} color={['']} name='Data Base' />
                     </ul>
                     : null
                 }
+                <Up />
             </div>
         </>
     )

@@ -7,8 +7,8 @@ export const HomeCart = ({ }) => {
          justify-center items-center">
             <div className="w-auto grid grid-cols-2 gap-8 
             justify-center items-center my-8 ">
-                <img src="/public/img/img1.png" alt=""
-                    className="home:w-20" />
+                <img src="/public/img/img1.jpg" alt=""
+                    className="w-60 rounded-full home:w-20" />
                 <img src="/public/img/Nav.png" alt=""
                     className="w-60 home:w-20" />
             </div>
@@ -17,7 +17,7 @@ export const HomeCart = ({ }) => {
                 <img src="/public/img/Home.png" alt=""
                     className="w-96 home:w-60" />
                 <span className="text-2xl w-auto home:text-15
-                 home:p-2 home:text-center">
+                 home:p-2 home:text-center font-jet">
                     Programmer||Web Developer||Graphic Designer
                 </span>
 
@@ -66,45 +66,54 @@ export const InpForm = ({ type, name, placeholder, pattern, title }) => {
 
     )
 }
-export const LiMenu= ({ico, name, color }) =>{
+
+export const LiMenu = ({ ico, name, color, hrf }) => {
     return (
-        <li className="flex flex-row w-full items-center p-3 border-b border-blackGray
+        <li className="flex flex-row w-full  p-3 border-b border-blackGray
         hover:bg-blackGray hover:text-sta cursor-pointer">
-            <FontAwesomeIcon icon={ico} style={{color}}/>
-            <p className="mx-2">{name}</p>
+            <a href={hrf} className="flex flex-row items-center">
+                {Array.isArray(ico) && ico.map((ico, index) => (
+                    <FontAwesomeIcon key={index} icon={ico} style={{ color: color[index], margin: "3px" }} />
+                ))}
+                <p className="mx-2">{name}</p>
+            </a>
         </li>
     )
 }
-export const Lipro = ({ title, cont }) => {
-    
+export const Lipro = ({ title, cont, icon, color }) => {
+
 
     return (
         <>
-            <li className="flex flex-row items-center">
+            <li className="flex flex-row  items-center">
                 {title}
-                <div className="mx-2 text-Gr text-15">
-                    {cont}
-                </div>
+                {Array.isArray(cont) && cont.map((cont, index) => (
+                    <p key={index} style={{ margin: '0px 3px', color: '#969696', fontSize: '15px' }}>
+                        {cont}
+                    </p>
+                ))}
+                {Array.isArray(icon) && Array.isArray(color) && icon.map((icon, index) => (
+                    <FontAwesomeIcon key={index} icon={icon}
+                        style={{ color: color[index], margin: "3px" }} />
+                ))}
             </li>
         </>
     )
 }
-// export const Lipro = ({ title, cont }) => {
-//     if (!title || !cont) return null;
-//     return (
-//         <>
-//             {Array.isArray(cont) ? (
-//                 cont.map((item, index) => (
-//                     <li key={index}>
-//                         {title}:{item}
-//                     </li>
-//                 ))
-//             ) : (
-//                 <li>
-//                     {title}:{cont}
-//                 </li>
-//             )
-//             }
-//         </>
-//     )
-// }
+export const Elementk = ({ et }) => {
+    return (
+        <p className="flex flex-row  items-center text-green-500">
+            {et}
+        </p>
+    )
+}
+
+export const HtmLI = ({ title }) => {
+    return (
+        <div className="flex flex-row hover:bg-black">
+            <Elementk et={"<li>"} />
+            <li className="text-blue-400">{title}</li>
+            <Elementk et={"</li>"} />
+        </div>
+    )
+}

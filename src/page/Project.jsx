@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ProjectCard } from "../components/ProjectCard";
+import { faAngular, faCss3, faHtml5, faReact, faSass, faSquareJs } from "../components/Iconos";
 
 function Projects() {
     return (
@@ -14,56 +15,30 @@ function Projects() {
                         src={'https://psicoterapiaindividual.netlify.app/'}
                         title={'Piscoterapia Individual'}
                         img={'public/img/proyecto4.jpg'}
-                        tools={[
-                            <i className="fa-brands fa-html5" style={{ color: '#e57915' }}></i>,
-                            <i className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></i>,
-                            <i className="fa-brands fa-js" style={{ color: '#FFE118' }}></i>,
-                            <i className="fa-brands fa-sass" style={{ color: 'pink', margin: '0 3px' }}></i>
-                        ]}
-                        fram={[
-                            <div className="flex itemes-center">
-                                <i className="fa-brands fa-react" style={{ color: '#17FFEA' }}></i>
-                                <img src="public/img/tailwindcss.png" className="w-4 h-4 mx-1"></img>
-                            </div>
-                        ]}
+                        tools={[faHtml5, faCss3, faSquareJs, faSass]}
+                        color={['#C24423', '#42A5F5', '#FFCA28', '#C73A6A']}
+                        fram={[faReact]}
+                        colorF={['#03A5B9']}
                         dat={'24-11-2023'}
                         typ={'Consultancy'}
                     />
                     <ProjectCard
                         title={'Pong'}
                         img={'public/img/proyect2.jpg'}
-                        tools={[
-                            <i className="fa-brands fa-html5" style={{ color: '#e57915' }}></i>,
-                            <i className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></i>,
-                            <i className="fa-brands fa-js" style={{ color: '#FFE118' }}></i>,
-                        ]}
-                        fram={'None'}
+                        tools={[faHtml5, faCss3, faSquareJs]}
+                        color={['#C24423', '#42A5F5', '#FFCA28']}
+                        nonFram={'None'}
                         dat={'12-05-2022'}
                         typ={'Game'}
                     />
                     <ProjectCard
                         title={'Atrapame si Puedes'}
                         img={'public/img/proyect5.jpg'}
-                        tools={[
-                            <i className="fa-brands fa-html5" style={{ color: '#e57915' }}></i>,
-                            <i className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></i>,
-                            <i className="fa-brands fa-js" style={{ color: '#FFE118' }}></i>,
-                        ]}
-                        fram={'None'}
-                        dat={'13-09-2022'}
-                        typ={'Game'}
-                    />
-                    <ProjectCard
-                        title={'Atrapame si Puedes'}
-                        img={'public/img/proyect5.jpg'}
-                        tools={[
-                            <i className="fa-brands fa-html5" style={{ color: '#e57915' }}></i>,
-                            <i className="fa-brands fa-css3-alt" style={{ color: '#00A2E8', margin: '0 3px' }}></i>,
-                            <i className="fa-brands fa-js" style={{ color: '#FFE118' }}></i>,
-                        ]}
-                        fram={'None'}
-                        dat={'13-09-2022'}
-                        typ={'Game'}
+                        tools={[faHtml5, faCss3, faSquareJs]}
+                        color={['#C24423', '#42A5F5', '#FFCA28']}
+                        nonFram={'None'}
+                        dat={['13-09-2022']}
+                        typ={['Game']}
                     />
                 </div>
             </section>

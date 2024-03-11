@@ -40,7 +40,7 @@ function Header() {
             {/*  */}
             {isDeplegad ?
                 <aside className="flex flex-col z-10 absolute 
-                w-60 h-full  bg-blackGray "
+                w-60 h-full  bg-blackGray " ref={menuRef}
                 >
                     <div className="flex w-full justify-end items-center my-4
                     border-b border-Gr">

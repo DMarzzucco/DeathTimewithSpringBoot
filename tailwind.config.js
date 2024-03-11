@@ -15,6 +15,7 @@ export default {
         'mini': { 'max': '300px' }
       },
       fontSize: {
+        '70': '70px',
         '60': '60px',
         '40': '40px',
         '30': '30px',
@@ -53,6 +54,7 @@ export default {
       borderRadius: {
         '50': '50%',
         '30': '30px',
+        '20': '20px',
         '10': '10px',
       },
       boxShadow: {
