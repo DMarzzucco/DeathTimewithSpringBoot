@@ -7,9 +7,9 @@ export const HomeCart = ({ }) => {
          justify-center items-center">
             <div className="w-auto grid grid-cols-2 gap-8 
             justify-center items-center my-8 ">
-                <img src="/public/img/img1.jpg" alt=""
+                <img src="public/img/img1.jpg" alt=""
                     className="w-60 rounded-full home:w-20" />
-                <img src="/public/img/Nav.png" alt=""
+                <img src="public/img/Nav.png" alt=""
                     className="w-60 home:w-20" />
             </div>
             <div className="flex flex-col justify-center

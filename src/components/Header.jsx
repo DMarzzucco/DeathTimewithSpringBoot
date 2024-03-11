@@ -32,7 +32,7 @@ function Header() {
                 </button>
                 <div className="p-1">
                     <Link to={"/"} onClick={close}>
-                        <img src="/public/img/Nav.png"
+                        <img src="public/img/Nav.png"
                             className="w-9 h-10" alt="" />
                     </Link>
                 </div>
