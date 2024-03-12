@@ -46,7 +46,9 @@ export default {
         'Bg2': '#32363D',
         'Gr': '#969696',
         'sta': '#C3CBD3',
-        'Orang': '#C96718'
+        'Orang': '#C96718',
+        'Msyel': '#FFB82B',
+        'Msyel2':'#F1BF51'
       },
       margin: {
         'Load': { '15px': 'auto' }

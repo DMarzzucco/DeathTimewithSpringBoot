@@ -4,7 +4,7 @@ function Home() {
     return (
         <main className="Home">
             <section className="Cont">
-                <HomeCart />
+                <HomeCart/>
             </section>
         </main>
     )

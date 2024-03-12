@@ -1,7 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss3, faHtml5 } from "../Iconos";
+import { faCss3, faHtml5, faSass } from "../Iconos";
 import { Elementk, HtmLI } from "../Comp";
 import { Link } from "react-router-dom";
+import { ListS, ListStyle } from "../ListStyle";
+import TailwindLogo from "../../assets/tailwind.svg";
 
 function Htm() {
     return (
@@ -72,14 +74,35 @@ function Htm() {
                             Cascading Style Sheets
                         </p>
                     </div>
-                    <div className="font-jet">
-                        <div className="flex flex-row">
-                            <p>my-style-skills</p>
-                            <p>{"{"}</p>
-                        </div>
-                        <div></div>
-                        <p>{"}"}</p>
-                    </div>
+                    {/*  */}
+                    <ListStyle title={".myStyleSkill"}>
+                        <ListS prop={"Responsive-Web:"} values={"Page-Design;"} />
+                        <ListS prop={"Styling-and:"} values={"Visual-Design;"} />
+                        <ListS prop={"Animations:"} values={"&-CSS3;"} />
+                        <ListS prop={"Display:"} values={"(flex-box & gird-layout);"} />
+                        <ListS prop={"guidelines:"} values={"WCAG;"} />
+                        <ListS prop={"Optmizations:"} values={"&-Perfomance;"} />
+                        <ListS prop={"Compatibility:"} values={"All-Browser;"} />
+                        <ListS prop={"Themes:"} values={"customized;"} />
+                        <ListS prop={"Version:"} values={"Control;"} />
+                        <ListS prop={"User:"} values={"Centered-Desing;"} />
+                        <ListS prop={"Maintenance:"} values={"&-refactorings;"} />
+                    </ListStyle>
+                    <ListStyle title={".CSS-Preprocessor"}>
+                        <Link to={"https://sass-lang.com/"} className="flex flex-row items-center">
+                            <p className="m-1">SASS</p>
+                            <FontAwesomeIcon icon={faSass} color="#C73A6A" fontSize="40px" />
+                        </Link>
+                        <ListStyle title={".Framework"}>
+                            <Link to={"https://tailwindcss.com/"} className="flex flex-row items-center">
+                                <p>class=</p>
+                                <p className="m-1 text-blue-500">"Tailwind-css"</p>
+                                <img src={TailwindLogo} alt="" />
+                            </Link>
+                        </ListStyle>
+                    </ListStyle>
+
+                    {/*  */}
                 </div>
             </section>
         </>
