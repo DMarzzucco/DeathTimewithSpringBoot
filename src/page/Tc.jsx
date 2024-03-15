@@ -11,7 +11,7 @@ function Tc() {
                 </div>
             </section>
             <Htm/>
-            {/* <JavaScript/> */}
+            <JavaScript/>
         </main>
     )
 }

@@ -38,7 +38,7 @@ function MenuTc() {
                     <ul onClick={closeMenu} className='bg-sta text-blackGray'
                         ref={menuRef}>
                         <LiMenu ico={[faHtml5, faCss3]} color={['#F16529', '#2965f1']} name='HTML/CSS' hrf={'#htm'} />
-                        <LiMenu ico={[faSquareJs]} color={['#FFBF00']} name='JavaScript' />
+                        <LiMenu ico={[faSquareJs]} color={['#FFBF00']} name='JavaScript' hrf={'#js'} />
                         <LiMenu ico={[faPenToSquare]} color={['#5571B9']} name='Graphic Desing' />
                         <LiMenu ico={[faDatabase]} color={['']} name='Data Base' />
                     </ul>

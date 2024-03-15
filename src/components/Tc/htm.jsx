@@ -58,9 +58,8 @@ function Htm() {
                 </div>
             </section>
             <section className="w-full  bg-opacity-50
-            flex flex-col justify-center items-end ">
+            flex flex-col justify-center items-end py-3 border-b ">
                 <div className="mx-10">
-                    {/* continue here 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻 👇🏻*/}
                     <div className="flex  flex-row  font-jet justify-between w-auto
                       items-center ">
                         <Link to={"https://developer.mozilla.org/en-US/docs/Web/CSS"}>
