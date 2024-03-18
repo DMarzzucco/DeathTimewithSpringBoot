@@ -12,19 +12,19 @@ function Htm() {
             flex flex-col justify-center items-start">
                 <div className="mx-10">
                     <div className="flex  flex-row  font-jet justify-between w-auto
-                    items-center ">
+                    items-center sixet:flex-col  ">
                         <Link to={"https://developer.mozilla.org/en-US/docs/Web/HTML"}>
                             <FontAwesomeIcon icon={faHtml5} className="
                         text-70 text-orange-700" />
                         </Link>
-                        <h1 className="text-60 mx-4 text-orange-700">
+                        <h1 className="text-60 mx-4 text-orange-700 menek2:text-30">
                             H T M L
                         </h1>
                         <p className="text-20 text-set">
                             Markup Language
                         </p>
                     </div>
-                    <div>
+                    <div className="mini3:text-12">
                         <div className="font-jet">
                             <Elementk et={"<section>"} />
                             <div className="ml-5">
@@ -58,15 +58,16 @@ function Htm() {
                 </div>
             </section>
             <section className="w-full  bg-opacity-50
-            flex flex-col justify-center items-end py-3 border-b ">
+            flex flex-col justify-center items-end py-3 border-b
+            mini3:items-center ">
                 <div className="mx-10">
                     <div className="flex  flex-row  font-jet justify-between w-auto
-                      items-center ">
+                      items-center sixmit:flex-col ">
                         <Link to={"https://developer.mozilla.org/en-US/docs/Web/CSS"}>
                             <FontAwesomeIcon icon={faCss3} className="
                           text-70 text-blue-700" />
                         </Link>
-                        <h1 className="text-60 mx-4 text-blue-700">
+                        <h1 className="text-60 mx-4 text-blue-700 menek2:text-30">
                             C S S
                         </h1>
                         <p className="text-20 text-set">
@@ -90,13 +91,13 @@ function Htm() {
                     <ListStyle title={".CSS-Preprocessor"}>
                         <Link to={"https://sass-lang.com/"} className="flex flex-row items-center">
                             <p className="m-1">SASS</p>
-                            <FontAwesomeIcon icon={faSass} color="#C73A6A" fontSize="40px" />
+                            <FontAwesomeIcon icon={faSass} color="#C73A6A" fontSize="40px" className="menek:w-7" />
                         </Link>
                         <ListStyle title={".Framework"}>
                             <Link to={"https://tailwindcss.com/"} className="flex flex-row items-center">
                                 <p>class=</p>
                                 <p className="m-1 text-blue-500">"Tailwind-css"</p>
-                                <img src={TailwindLogo} alt="" />
+                                <img src={TailwindLogo} alt="" className="menek:w-5 "/>
                             </Link>
                         </ListStyle>
                     </ListStyle>

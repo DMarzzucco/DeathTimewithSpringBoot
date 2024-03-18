@@ -1,4 +1,4 @@
-import { Htm, JavaScript } from "../components/Tc";
+import { Graphic, Htm, JavaScript } from "../components/Tc";
 function Tc() {
     return (
         <main className='TcMain'>
@@ -10,6 +10,7 @@ function Tc() {
                         DT-06.03.24 </p>
                 </div>
             </section>
+            <Graphic/>
             <Htm/>
             <JavaScript/>
         </main>

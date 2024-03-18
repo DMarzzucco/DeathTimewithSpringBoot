@@ -7,10 +7,15 @@ export default {
   theme: {
     extend: {
       screens: {
-        'footer': { 'max': '500px' },
-        'home': { 'max': '500px' },
         'About': { 'max': '950px' },
+        'eight': { 'max': '800px' },
+        'sixmit': { 'max': '640px' },
+        'sixet': { 'max': '604px' },
+        'footer': { 'max': '509px' },
+        'home': { 'max': '500px' },
         'mini3': { 'max': '478px' },
+        'menek': { 'max': '448px' },
+        'menek2': { 'max': '367px' },
         'mini2': { 'max': '330px' },
         'mini': { 'max': '300px' }
       },
@@ -23,6 +28,7 @@ export default {
         '18': '18px',
         '16': '16px',
         '15': '15px',
+        '12': '12px',
         '10': '10px',
         '5': '5px',
       },
