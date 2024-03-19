@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { Lipro } from "./Comp"
+import NavImage from "../../public/img/Nav.png"
 
 export const ProjectCard = ({ title, src, img, tools, fram, nonFram, dat, typ, color, colorF }) => {
 
@@ -30,7 +31,7 @@ export const ProjectCard = ({ title, src, img, tools, fram, nonFram, dat, typ, c
                             cont={[typ]}
                         />
                     </ul>
-                    <img src="public/img/Nav.png" alt=""
+                    <img src={NavImage} alt=""
                         className="w-10 h-11 p-1" />
                 </div>
             </Link>

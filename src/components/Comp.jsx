@@ -26,7 +26,7 @@ export const HomeCart = ({ }) => {
                 {/*  */}
                 <img src={profileImage} alt="" className="w-20 rounded-full" />
                 {/*  */}
-                <div className="flex flex-col items-start justify-center mx-3 mini3:items-center ">
+                <div className="flex flex-col items-start justify-center mx-3 mini3:items-center mini3:text-center ">
                     <h1 className="font-jet text-25 mini3:text-20 ">Dario Marzzucco</h1>
                     <span className="text-15 font-jet w-tre mini3:w-doshMed text-Gr">
                         Programmer,Web Developer,Graphic Designer

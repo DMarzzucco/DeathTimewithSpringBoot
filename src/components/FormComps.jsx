@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import NavImage from "../../public/img/Nav.png"
 
 export const Loader = ({ }) => {
     return (
@@ -21,7 +22,7 @@ export const Confirm = ({ }) => {
         border w-doshMed h-tre ml-4 mt-10 
         rounded-30 flex flex-col justify-center items-center"
         >
-            <img src="public/img/Nav.png" alt="" className="w-20"/>
+            <img src={NavImage} alt="" className="w-20"/>
             <h1 className="text-30">
                 Message Sent!
             </h1>

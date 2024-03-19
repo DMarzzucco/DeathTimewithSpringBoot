@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import { ProjectCard } from "../components/ProjectCard";
 import { faAngular, faCss3, faHtml5, faReact, faSass, faSquareJs } from "../components/Iconos";
+import proyecto4Image from "../../public/img/proyecto4.jpg"
+import proyecto2Image from "../../public/img/proyect2.jpg"
+import proyect5Image from "../../public/img/proyect5.jpg"
+
 
 function Projects() {
     return (
@@ -14,7 +18,7 @@ function Projects() {
                     <ProjectCard
                         src={'https://psicoterapiaindividual.netlify.app/'}
                         title={'Piscoterapia Individual'}
-                        img={'public/img/proyecto4.jpg'}
+                        img={proyecto4Image}
                         tools={[faHtml5, faCss3, faSquareJs, faSass]}
                         color={['#C24423', '#42A5F5', '#FFCA28', '#C73A6A']}
                         fram={[faReact]}
@@ -24,7 +28,7 @@ function Projects() {
                     />
                     <ProjectCard
                         title={'Pong'}
-                        img={'public/img/proyect2.jpg'}
+                        img={proyecto2Image}
                         tools={[faHtml5, faCss3, faSquareJs]}
                         color={['#C24423', '#42A5F5', '#FFCA28']}
                         nonFram={'None'}
@@ -33,7 +37,7 @@ function Projects() {
                     />
                     <ProjectCard
                         title={'Atrapame si Puedes'}
-                        img={'public/img/proyect5.jpg'}
+                        img={proyect5Image}
                         tools={[faHtml5, faCss3, faSquareJs]}
                         color={['#C24423', '#42A5F5', '#FFCA28']}
                         nonFram={'None'}

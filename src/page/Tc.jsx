@@ -4,7 +4,7 @@ function Tc() {
         <main className='TcMain'>
             <section className=" h-All flex justify-start items-center w-full p-2 font-jet">
                 <div className="w-tre justify-start items-center m-10">
-                    <h1 className="text-60">TECNOLOGIA QUE SE IMPLEMENTAR</h1>
+                    <h1 className="text-60 mini3:text-30">TECNOLOGIA QUE SE IMPLEMENTAR</h1>
                     <p className="text-Gr">En ciertas tecnologias, mi destreza es muy buena, en cambio en otras no.
                         Hasta la ultima acutalizacion..
                         DT-06.03.24 </p>
