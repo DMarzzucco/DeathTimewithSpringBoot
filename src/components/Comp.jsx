@@ -1,27 +1,38 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
+import NavImage from "../../public/img/Nav.png"
+import logo2Image from "../../public/img/logo2.png"
+// import img1Image from "../../public/img/img1.png";
+
+
 
 export const HomeCart = ({ }) => {
     return (
         <div className="w-auto home-cart flex flex-col
          justify-center items-center">
-            <div className="w-auto grid grid-cols-2 gap-8 
+            <div className="w-auto flex flex-col 
             justify-center items-center my-8 ">
-                <img src="public/img/img1.jpg" alt=""
-                    className="w-60 rounded-full home:w-20" />
-                <img src="public/img/Nav.png" alt=""
-                    className="w-60 home:w-20" />
-            </div>
-            <div className="flex flex-col justify-center
-             items-center">
-                <img src="/public/img/Home.png" alt=""
+                {/*  */}
+                <img src={NavImage} alt=""
+                    className="w-60 home:w-20 my-3" />
+                <img src={logo2Image} alt=""
                     className="w-96 home:w-60" />
-                <span className="text-2xl w-auto home:text-15
-                 home:p-2 home:text-center font-jet">
-                    Programmer||Web Developer||Graphic Designer
-                </span>
-
+                {/*  */}
             </div>
+            {/*  */}
+            <Link to={"https://www.linkedin.com/in/dario-marzzucco-597090283/"}
+                className="flex flex-row justify-center
+             items-center bg-blackGray p-1 rounded-40 mini3:flex-col">
+                {/*  */}
+                {/* <img src={img1Image} alt="" className="w-20 rounded-full" /> */}
+                {/*  */}
+                <div className="flex flex-col items-start justify-center mx-3 mini3:items-center ">
+                    <h1 className="font-jet text-25 mini3:text-20 ">Dario Marzzucco</h1>
+                    <span className="text-15 font-jet w-tre mini3:w-doshMed text-Gr">
+                        Programmer,Web Developer,Graphic Designer
+                    </span>
+                </div>
+            </Link>
         </div>
     )
 }
