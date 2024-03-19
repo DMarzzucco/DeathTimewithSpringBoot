@@ -32,7 +32,7 @@ function Header() {
                 </button>
                 <div className="p-1">
                     <Link to={"/"} onClick={close}>
-                        <img src="/public/img/Nav.png"
+                        <img src="./public/img/Nav.png"
                             className="w-9 h-10" alt="" />
                     </Link>
                 </div>
@@ -45,7 +45,7 @@ function Header() {
                     <div className="flex w-full justify-end items-center my-4
                     border-b border-Gr">
                         <div className="flex justify-center items-center w-full ">
-                            <img src="/public/img/Home.png" alt="" className="w-40" />
+                            <img src="./public/img/Home.png" alt="" className="w-40" />
                         </div>
                         <button className="p-2 hover:bg-stone-200 hover:text-blackGray" onClick={close}>
                             <i className="fa-solid fa-xmark"></i>
