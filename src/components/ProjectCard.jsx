@@ -10,7 +10,7 @@ export const ProjectCard = ({ title, src, img, tools, fram, nonFram, dat, typ, c
                 <h2 className="text-center text-20">{title}</h2>
                 <img src={img} alt="" className="w-full" />
                 <div className="flex flex-row justify-between items-center">
-                    <ul className="flex flex-col">
+                    <ul className="flex flex-col mx-2 py-2">
                         <Lipro
                             title={'Tools:'}
                             icon={tools}

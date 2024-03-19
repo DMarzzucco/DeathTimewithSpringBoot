@@ -1,3 +1,6 @@
+import cepecImage from '../../public/img/cepec.png'
+import utnImage from '../../public/img/UTN.jpg'
+
 const AbLi = ({ items }) => {
     if (!items) return null;
     return (
@@ -66,15 +69,15 @@ export const Study = ({ ico, title }) => {
                     <i className="fa-solid fa-chevron-down"></i>
                 </summary>
                 <div className="text-blackGray bg-sta flex flex-col justify-center items-center">
-                    <UN img={'public/img/cepec.webp'} title={'Graphic Design'} items={[
+                    <UN img={cepecImage} title={'Graphic Design'} items={[
                         'Instituto Superior de Design “C.E.P.E.C.” Diseño Integral',
                         "2017-2020"
                     ]} />
-                    <UN img={'public/img/UTN_logo.jpg'} title={'System Engineering'} items={[
+                    <UN img={utnImage} title={'System Engineering'} items={[
                         'Universidad Tecnológica Nacional',
                         "2022-present"
                     ]} />
-                    <UN img={'public/img/UTN_logo.jpg'} title={'Programming Technician'} items={[
+                    <UN img={utnImage} title={'Programming Technician'} items={[
                         'Universidad Tecnológica Nacional',
                         "2023-present"
                     ]} />
