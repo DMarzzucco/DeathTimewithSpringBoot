@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
 import NavImage from "../../public/img/Nav.png"
 import logo2Image from "../../public/img/logo2.png"
-// import img1Image from "../../public/img/img1.png";
+import profileImage from "../../public/img/profile.png";
 
 
 
@@ -22,9 +22,9 @@ export const HomeCart = ({ }) => {
             {/*  */}
             <Link to={"https://www.linkedin.com/in/dario-marzzucco-597090283/"}
                 className="flex flex-row justify-center
-             items-center bg-blackGray p-1 rounded-40 mini3:flex-col">
+             items-center bg-blackGray p-1 rounded-40 mini3:flex-col mini3:rounded-20">
                 {/*  */}
-                {/* <img src={img1Image} alt="" className="w-20 rounded-full" /> */}
+                <img src={profileImage} alt="" className="w-20 rounded-full" />
                 {/*  */}
                 <div className="flex flex-col items-start justify-center mx-3 mini3:items-center ">
                     <h1 className="font-jet text-25 mini3:text-20 ">Dario Marzzucco</h1>
