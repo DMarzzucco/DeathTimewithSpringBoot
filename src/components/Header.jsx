@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { TogAside } from "./Comp";
 import NavImage from "../../public/img/Nav.png";
+import HomeImage from "../../public/img/Home.png";
+
 function Header() {
     const [isDeplegad, setIsDesplegad] = useState(false);
     const menuRef = useRef(null);
@@ -45,7 +47,7 @@ function Header() {
                     <div className="flex w-full justify-end items-center my-4
                     border-b border-Gr">
                         <div className="flex justify-center items-center w-full ">
-                            <img src="./public/img/Home.png" alt="" className="w-40" />
+                            <img src={HomeImage} alt="" className="w-40" />
                         </div>
                         <button className="p-2 hover:bg-stone-200 hover:text-blackGray" onClick={close}>
                             <i className="fa-solid fa-xmark"></i>
