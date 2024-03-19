@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { TogAside } from "./Comp";
+import NavImage from "../../public/img/Nav.png";
 function Header() {
     const [isDeplegad, setIsDesplegad] = useState(false);
     const menuRef = useRef(null);
@@ -32,8 +33,7 @@ function Header() {
                 </button>
                 <div className="p-1">
                     <Link to={"/"} onClick={close}>
-                        <img src="./public/img/Nav.png"
-                            className="w-9 h-10" alt="" />
+                        <img src={NavImage} className="w-9 h-10" alt="Nav Image" />
                     </Link>
                 </div>
             </div>
