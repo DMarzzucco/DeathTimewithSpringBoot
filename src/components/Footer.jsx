@@ -7,7 +7,7 @@ function Footer() {
         items-center">
             <div className="grid grid-cols-2 my-3 justify-center items-center
             footer:flex footer:flex-col">
-                <img src="public/img/logo1.png" alt=""
+                <img src="/public/img/logo1.png" alt=""
                     className="w-56 m-1" />
                 <div>
                     <div className="flex flex-col justify-center items-start">
