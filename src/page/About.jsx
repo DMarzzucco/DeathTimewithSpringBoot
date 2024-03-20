@@ -33,7 +33,7 @@ function About() {
           <p className='w-tre text-Gr mini2:w-auto'>If you need my resume, you can download it by clicking the following button  </p>
         </div>
         <p className='text-40 mini3:hidden text-Gr text-bold font-bold m-2'>{'~~>'}</p>
-        <a href="../assets/cv.pdf" download="cv.pdf">
+        <a href="/cv.pdf" download="cv.pdf">
           <button className='text-30 p-5 rounded-full hover:bg-sta hover:text-Bg2 '>
             <i className="fa-solid fa-chevron-down"></i>
           </button>
