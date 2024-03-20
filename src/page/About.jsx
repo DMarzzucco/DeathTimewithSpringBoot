@@ -28,12 +28,12 @@ function About() {
         </div>
       </section>
       <section className='CV'>
-        <div className='flex flex-col px-2 border-r border-sta mini2:border-none'>
+        <div className='flex flex-col px-2 border-r border-sta mini3:border-none'>
           <h2>Curriculum</h2>
           <p className='w-tre text-Gr mini2:w-auto'>If you need my resume, you can download it by clicking the following button  </p>
         </div>
         <p className='text-40 mini3:hidden text-Gr text-bold font-bold m-2'>{'~~>'}</p>
-        <a href='public/img/c.png' download="">
+        <a href="../assets/CV.pdf" download="CV.pdf">
           <button className='text-30 p-5 rounded-full hover:bg-sta hover:text-Bg2 '>
             <i className="fa-solid fa-chevron-down"></i>
           </button>
