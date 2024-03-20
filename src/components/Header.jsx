@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { TogAside } from "./Comp";
-import NavImage from "../../public/img/Nav.png";
-import HomeImage from "../../public/img/Home.png";
+import NavImage from "../../public/img/Nav.webp";
+import HomeImage from "../../public/img/Home.webp";
 
 function Header() {
     const [isDeplegad, setIsDesplegad] = useState(false);

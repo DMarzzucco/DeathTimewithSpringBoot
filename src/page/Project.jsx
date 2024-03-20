@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { ProjectCard } from "../components/ProjectCard";
-import { faAngular, faCss3, faHtml5, faReact, faSass, faSquareJs } from "../components/Iconos";
-import proyecto4Image from "../../public/img/proyecto4.jpg"
-import proyecto2Image from "../../public/img/proyect2.jpg"
-import proyect5Image from "../../public/img/proyect5.jpg"
+import { faCss3, faHtml5, faReact, faSass, faSquareJs } from "../components/Iconos";
+import proyecto4Image from "../../public/img/proyecto4.webp"
+import proyecto2Image from "../../public/img/proyect2.webp"
+import proyect5Image from "../../public/img/proyect5.webp"
 
 
 function Projects() {

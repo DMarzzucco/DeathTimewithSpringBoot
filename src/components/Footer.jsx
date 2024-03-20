@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FooterEn, FooterInf } from "./Comp";
-import Logo1Image from "../../public/img/logo1.png";
+import Logo1Image from "../../public/img/logo1.webp";
 
 function Footer() {
     return (

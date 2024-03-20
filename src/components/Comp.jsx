@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
-import NavImage from "../../public/img/Nav.png"
-import logo2Image from "../../public/img/logo2.png"
-import profileImage from "../../public/img/profile.png";
+import NavImage from "../../public/img/Nav.webp"
+import logo2Image from "../../public/img/logo2.webp"
+import profileImage from "../../public/img/profile.webp";
 
 
 

@@ -1,5 +1,5 @@
-import cepecImage from '../../public/img/cepec.png'
-import utnImage from '../../public/img/UTN.jpg'
+import cepecImage from '../../public/img/cepec.webp'
+import utnImage from '../../public/img/UTN.webp'
 
 const AbLi = ({ items }) => {
     if (!items) return null;

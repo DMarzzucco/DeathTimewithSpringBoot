@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import NavImage from "../../public/img/Nav.png"
+import NavImage from "../../public/img/Nav.webp"
 
 export const Loader = ({ }) => {
     return (

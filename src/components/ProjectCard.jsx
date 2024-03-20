@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { Lipro } from "./Comp"
-import NavImage from "../../public/img/Nav.png"
+import NavImage from "../../public/img/Nav.webp"
 
 export const ProjectCard = ({ title, src, img, tools, fram, nonFram, dat, typ, color, colorF }) => {
 
