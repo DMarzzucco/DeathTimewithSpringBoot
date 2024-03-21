@@ -7,7 +7,7 @@ function Tc() {
                     <h1 className="text-60 mini3:text-30">MY TCHNOLOGIES</h1>
                     <p className="text-Gr">
                         Technologies that will be implemented at this time, until the last update of this page. <br />
-                        Last update: 0-0-0
+                        Last update: 12-03-24
                     </p>
                 </div>
             </section>
