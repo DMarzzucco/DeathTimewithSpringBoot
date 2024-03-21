@@ -1,3 +1,4 @@
+import { faBook, faCode, faGraduationCap } from '../components/Iconos';
 import { AboutD, BottonAb, Study } from '../components/AboutDT';
 import CV from '../components/CV';
 import { PDFDownloadLink } from '@react-pdf/renderer';
@@ -9,11 +10,11 @@ function About() {
           <h1 className='font-jet text-center'>About Me</h1>
         </div>
         <div className='flex flex-col About:flex About:flex-col'>
-          <BottonAb Children={
+          <BottonAb ico={faGraduationCap} title={'Education'} Children={
             <Study ico={<i className="fa-solid fa-graduation-cap"></i>} title={'Studies'} />
           } />
 
-          <BottonAb Children={
+          <BottonAb  ico={faBook} title={'Hobbie'} Children={
             <AboutD ico={<i className="fa-solid fa-hourglass-start"></i>} title={'Hobbies'} items={[
               'Train me in New Technologiies',
               'Digital Illustration',
@@ -23,7 +24,7 @@ function About() {
             />
           } />
 
-          <BottonAb Children={
+          <BottonAb  ico={faCode} title={'Skills'} Children={
             <AboutD ico={<i className="fa-solid fa-user-pen"></i>} title={'Skill'} items={[
               'Analysis and Problem Solving',
               ' Creativity',

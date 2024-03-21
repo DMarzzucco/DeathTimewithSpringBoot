@@ -72,21 +72,24 @@ export const Study = ({ ico, title }) => {
 }
 // 
 
-export const BottonAb = ({ Children }) => {
+export const BottonAb = ({ ico, title, Children }) => {
     const [isShow, setIsShow] = useState(false);
     const show = () => { setIsShow(!isShow); }
     const close = () => { setIsShow(false); }
 
     return (
-        <div className="flex flex-row justify-center items-center">
-            <button onClick={show} className='w-dosh bg-slate-800 m-3 p-3'>
-                abrir
+        <div className="flex flex-col justify-center items-center">
+            <button onClick={show} className='w-dosh bg-blackGray m-3 p-3 hover:bg-sta hover:text-blackGray'>
+                <FontAwesomeIcon icon={ico} />
+                <h3>{title}</h3>
             </button>
             {isShow ?
-                <div className='bg-sta p-2 flex flex-col absolute justify- items-end'>
-                    <button onClick={close} className='w-1 h-1 p-2 flex items-center justify-center text-blackGray hover:bg-red-500 hover:text-sta'> 
-                    <FontAwesomeIcon icon={faXmark} />
-                    </button>
+                <div className='bg-blackGray p-1 flex flex-col absolute justify-center items-end'>
+                    <div className='w-full p-2 bg-blackGray flex items-center justify-end'>
+                        <button onClick={close} className='w-2 h-2 p-3 flex items-center justify-center text-sta hover:bg-red-700 hover:text-sta'>
+                            <FontAwesomeIcon icon={faXmark} />
+                        </button>
+                    </div>
                     {Children}
                 </div>
                 : null
