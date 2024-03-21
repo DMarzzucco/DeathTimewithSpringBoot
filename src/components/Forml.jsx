@@ -17,32 +17,25 @@ export function Forml() {
             setMesSent(true);
         } catch (error) {
             console.log(error);
-        } finally {
-            setSending(false);
-        }
+        } finally { setSending(false); }
     }
     return (
         <>
             <div className="flex flex-col justify-center items-center">
-                <h1 className="text-40">
-                    Contact Me
-                </h1>
+                <h1 className="text-40"> Contact Me</h1>
                 {mesSent && <Confirm />}
-                {/* <Confirm /> */}
                 <form ref={reForm} onSubmit={sendEmail} className="flex flex-col p-2 -ml-3 items-center ">
                     <InpForm type={"text"} name={"name"} placeholder={"Name"} />
                     {sending && <Loader />}
-                    {/* <Loader /> */}
                     <InpForm type={"text"} name={"phone"} placeholder={"Phone"} pattern={"[0-9]*"} title={"Just Numbers..."} />
                     <InpForm type={"text"} name={"mail"} placeholder={"Mail"} />
                     <InpForm type={"text"} name={"cont"} placeholder={"Context"} />
-                    <textarea name="message" id="" cols="30" rows="10"
-                        placeholder="Message" required className="w-full p-2 m-2 border rounded-lg border-Gr bg-blackGray" />
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"
+                        required className="w-full p-2 m-2 border rounded-lg border-Gr bg-blackGray" />
                     <input type="submit" value={"Send"} className="cursor-pointer w-full 
                     p-2 m-2 border rounded-lg border-Gr bg-blackGray
                      hover:bg-slate-300 hover:text-blackGray" />
                 </form>
-
             </div>
         </>
     )
