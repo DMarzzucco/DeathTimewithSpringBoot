@@ -84,7 +84,7 @@ export const BottonAb = ({ ico, title, Children }) => {
                 <h3>{title}</h3>
             </button>
             {isShow ?
-                <div className='bg-blackGray p-1 flex flex-col absolute justify-center items-end'>
+                <div className='bg-blackGray border border-Gr pt-1 flex flex-col absolute justify-center items-end'>
                     <div className='w-full p-2 bg-blackGray flex items-center justify-end'>
                         <button onClick={close} className='w-2 h-2 p-3 flex items-center justify-center text-sta hover:bg-red-700 hover:text-sta'>
                             <FontAwesomeIcon icon={faXmark} />
