@@ -1,5 +1,8 @@
+import { Children, useState } from 'react';
 import cepecImage from '../../public/img/cepec.webp'
 import utnImage from '../../public/img/UTN.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const AbLi = ({ items }) => {
     if (!items) return null;
@@ -14,22 +17,12 @@ const AbLi = ({ items }) => {
 
 export const AboutD = ({ ico, title, items }) => {
     return (
-        <div className="felx flex-col w-tre mini:w-dosh justify-center items-center">
-            <div className="flex flex-row h-10 justify-center items-center bg-blackGray">
-                <div className="text-20">{ico}</div>
-                <h1 className="px-3 text-20">{title}</h1>
+        <div className="felx flex-col w-tre mini:w-dosh my-5 justify-center items-center">
+            <div className="text-blackGray bg-sta">
+                <ul>
+                    <AbLi items={items} />
+                </ul>
             </div>
-            <details className="bg-Bg2 w-full">
-                <summary className="list-none cursor-pointer text-center
-                hover:bg-sta hover:text-Bg2">
-                    <i className="fa-solid fa-chevron-down"></i>
-                </summary>
-                <div className="text-blackGray bg-sta">
-                    <ul>
-                        <AbLi items={items} />
-                    </ul>
-                </div>
-            </details>
         </div>
     )
 }
@@ -60,29 +53,44 @@ export const UN = ({ items, title, img }) => {
 export const Study = ({ ico, title }) => {
     return (
         <div className="felx flex-col w-tre mini:w-dosh justify-center items-center">
-            <div className="flex flex-row h-10 justify-center items-center bg-blackGray">
-                <div className="text-20">{ico}</div>
-                <h1 className="px-3 text-20">{title}</h1>
+            <div className="text-blackGray bg-sta flex flex-col justify-center items-center">
+                <UN img={cepecImage} title={'Graphic Design'} items={[
+                    'Instituto Superior de Design “C.E.P.E.C.” Diseño Integral',
+                    "2017-2020"
+                ]} />
+                <UN img={utnImage} title={'System Engineering'} items={[
+                    'Universidad Tecnológica Nacional',
+                    "2022-present"
+                ]} />
+                <UN img={utnImage} title={'Programming Technician'} items={[
+                    'Universidad Tecnológica Nacional',
+                    "2023-present"
+                ]} />
             </div>
-            <details className="bg-Bg2 w-full">
-                <summary className="list-none cursor-pointer text-center hover:bg-sta hover:text-Bg2">
-                    <i className="fa-solid fa-chevron-down"></i>
-                </summary>
-                <div className="text-blackGray bg-sta flex flex-col justify-center items-center">
-                    <UN img={cepecImage} title={'Graphic Design'} items={[
-                        'Instituto Superior de Design “C.E.P.E.C.” Diseño Integral',
-                        "2017-2020"
-                    ]} />
-                    <UN img={utnImage} title={'System Engineering'} items={[
-                        'Universidad Tecnológica Nacional',
-                        "2022-present"
-                    ]} />
-                    <UN img={utnImage} title={'Programming Technician'} items={[
-                        'Universidad Tecnológica Nacional',
-                        "2023-present"
-                    ]} />
+        </div>
+    )
+}
+// 
+
+export const BottonAb = ({ Children }) => {
+    const [isShow, setIsShow] = useState(false);
+    const show = () => { setIsShow(!isShow); }
+    const close = () => { setIsShow(false); }
+
+    return (
+        <div className="flex flex-row justify-center items-center">
+            <button onClick={show} className='w-dosh bg-slate-800 m-3 p-3'>
+                abrir
+            </button>
+            {isShow ?
+                <div className='bg-sta p-2 flex flex-col absolute justify- items-end'>
+                    <button onClick={close} className='w-1 h-1 p-2 flex items-center justify-center text-blackGray hover:bg-red-500 hover:text-sta'> 
+                    <FontAwesomeIcon icon={faXmark} />
+                    </button>
+                    {Children}
                 </div>
-            </details>
+                : null
+            }
         </div>
     )
 }
