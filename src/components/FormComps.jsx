@@ -3,8 +3,8 @@ import NavImage from "../../public/img/Nav.webp"
 
 export const Loader = ({ }) => {
     return (
-        <div className="flex flex-col justify-center 
-        items-center absolute mt-20 ml-16 bg-blackGray p-4 border border-sta
+        <div className="flex flex-col justify-center absolute
+        items-center -mb-80 z-10 bg-blackGray p-4 border border-sta
         rounded-30 ">
             <div className="w-10 h-10 flex justify-center items-center m-10">
                 <span className="w-5 h-5 rounded-50 block m-Load
@@ -18,8 +18,8 @@ export const Loader = ({ }) => {
 }
 export const Confirm = ({ }) => {
     return (
-        <div className="absolute bg-Bg2
-        border w-doshMed h-tre ml-4 mt-10 
+        <div className=" bg-Bg2
+        border w-doshMed h-tre -mb-80 z-10
         rounded-30 flex flex-col justify-center items-center"
         >
             <img src={NavImage} alt="" className="w-20"/>
