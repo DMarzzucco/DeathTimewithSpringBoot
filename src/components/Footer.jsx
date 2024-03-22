@@ -11,7 +11,7 @@ function Footer() {
                 <img src={Logo1Image} alt=""
                     className="w-56 m-1" />
                 <div>
-                    <div className="flex flex-col justify-center items-start">
+                    <div className="flex flex-col justify-center items-start footer:items-center">
                         <h1>CONTACT</h1>
                         <FooterInf
                             ico={<i className="fa-solid fa-phone"></i>}
@@ -22,7 +22,7 @@ function Footer() {
                             inf={'drrkermazyxokv@gmail.com'}
                         />
                     </div>
-                    <div>
+                    <div className="flex justify-center items-center">
                         <FooterEn src={'https://github.com/DMarzzucco'} ico={<i className="fa-brands fa-github"></i>} />
                         <FooterEn src={'drrkermazyxokv@gmail.com'} ico={<i className="fa-brands fa-google"></i>} />
                         <FooterEn src={'https://www.linkedin.com/in/dario-marzzucco-597090283/'} ico={<i className="fa-brands fa-linkedin"></i>} />
