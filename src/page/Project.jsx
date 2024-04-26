@@ -27,6 +27,7 @@ function Projects() {
                         typ={'Consultancy'}
                     />
                     <ProjectCard
+                        src={"https://pong-dm.netlify.app/"}
                         title={'Pong'}
                         img={proyecto2Image}
                         tools={[faHtml5, faCss3, faSquareJs]}
@@ -36,13 +37,15 @@ function Projects() {
                         typ={'Game'}
                     />
                     <ProjectCard
-                        title={'Atrapame si Puedes'}
+                        src={"https://zklvs73p-5173.brs.devtunnels.ms/"}
+                        title={'Calculadora de Impuesto'}
                         img={proyect5Image}
                         tools={[faHtml5, faCss3, faSquareJs]}
                         color={['#C24423', '#42A5F5', '#FFCA28']}
-                        nonFram={'None'}
-                        dat={['13-09-2022']}
-                        typ={['Game']}
+                        fram={[faReact]}
+                        colorF={['#03A5B9']}
+                        dat={['25-04-2024']}
+                        typ={['Calculator']}
                     />
                 </div>
             </section>
