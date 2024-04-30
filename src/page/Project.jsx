@@ -37,7 +37,7 @@ function Projects() {
                         typ={'Game'}
                     />
                     <ProjectCard
-                        src={"https://zklvs73p-5173.brs.devtunnels.ms/"}
+                        src={"https://calculadorsm.netlify.app/"}
                         title={'Calculadora de Impuesto'}
                         img={proyect5Image}
                         tools={[faHtml5, faCss3, faSquareJs]}
