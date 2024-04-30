@@ -37,7 +37,7 @@ function MenuTc() {
                         ref={menuRef}>
                         <LiMenu ico={[faObjectUngroup]} color={['#5571B9']} name='Graphic Desing' hrf={"#Gr"} />
                         <LiMenu ico={[faHtml5, faCss3]} color={['#F16529', '#2965f1']} name='HTML/CSS' hrf={'#htm'} />
-                        <LiMenu ico={[faSquareJs]} color={['#FFBF00']} name='JavaScript' hrf={'#js'} />
+                        <LiMenu ico={[faSquareJs]} color={['#FFBF00']} name='JavaScript / TypeScript' hrf={'#js'} />
                     </ul>
                     : null
                 }
