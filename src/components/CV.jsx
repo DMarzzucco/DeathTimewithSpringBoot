@@ -207,6 +207,8 @@ function CV() {
                                 <Text style={styles.li}> Git</Text>
                                 <Text style={styles.li}> HTML/CSS</Text>
                                 <Text style={styles.li}> JavaScript/Node</Text>
+                                <Text style={styles.li}> TypeScript</Text>
+                                <Text style={styles.li}> Python</Text>
                                 <Text style={styles.li}> React/Astro/Express</Text>
                                 <Text style={styles.li}> Tailwind.CSS</Text>
                                 <Text style={styles.li}> SASS</Text>
