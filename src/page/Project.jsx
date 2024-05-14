@@ -27,12 +27,13 @@ function Projects() {
                         typ={'Consultancy'}
                     />
                     <ProjectCard
-                        src={"https://pong-dm.netlify.app/"}
-                        title={'Pong'}
+                        src={"https://spielpack.netlify.app/"}
+                        title={'SpielPack'}
                         img={proyecto2Image}
                         tools={[faHtml5, faCss3, faSquareJs]}
                         color={['#C24423', '#42A5F5', '#FFCA28']}
-                        nonFram={'None'}
+                        fram={[faReact]}
+                        colorF={['#03A5B9']}
                         dat={'12-05-2022'}
                         typ={'Game'}
                     />
