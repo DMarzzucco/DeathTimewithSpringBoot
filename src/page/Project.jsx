@@ -16,7 +16,7 @@ function Projects() {
                 </div>
                 <div className="ProjList">
                     <ProjectCard
-                        src={'https://psicoterapiaindividual.netlify.app/'}
+                        src={'https://psicoterap-a-individual--alpha.vercel.app/'}
                         title={'Piscoterapia Individual'}
                         img={proyecto4Image}
                         tools={[faHtml5, faCss3, faSquareJs, faSass]}
