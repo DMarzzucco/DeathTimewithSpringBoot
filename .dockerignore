@@ -1,7 +1,20 @@
-__pycache__
-.vscode
-notes.txt
-token.txt
-downloads
+*.DS_Store
+.idea
+*.iml
+*.log
+*.properties
+*.yml
+.vscode/
+*.env
 
+.mvn/
+target/
+build/
+*.jar
+*.war
+
+**/.DS_Store
+**/Thumbs.db
+
+.git
 .gitignore

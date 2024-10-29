@@ -1,12 +1,16 @@
 version: '3.8'
 
 services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - .:/app
+
+  db:
+    image: postgres
+    container_name: data_base_pg
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: data_base
     ports:
-      - "8000:8000"
-    command: python main.py
+      - "5432:5432"
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
