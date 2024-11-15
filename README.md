@@ -14,14 +14,20 @@ ZonedDateTime deathTime = LocalDateTime.parse("0000-00-00T00:00:00").atZone(Zone
 # Requirements
 
 * Docker [Docker-Desktop](https://www.docker.com/products/docker-desktop/)
-* .Java  [Java](https://www.java.com/download/ie_manual.jsp)
-* Java Development Kit (JDK)
-  17 [JDK Oracle](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+* .Java  [Java](https://www.java.com/download/ie_manual.jsp)   (Optionals)
 
-## Installation
+* Java Development Kit (JDK) 17 [JDK Oracle](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)   (Optionals)
+
+
+## Installation in Docker Container.
 
 ```bash
+# Initial the App
+docker-compose up 
+```
+## In Local Machine 
 
+```bash
 #Start Data Base
 docker-compose up db
 
@@ -30,8 +36,6 @@ docker-compose up db
 
 #RunApp
 .\mvnw spring-boot:run
-
-
 ```
 
 ## Port

@@ -27,6 +27,13 @@ public class UserModel {
         this.age = age;
     }
 
+    public UserModel(long id, String email, String name, String age) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.age = age;
+    }
+
     public String getName() {
         return name;
     }

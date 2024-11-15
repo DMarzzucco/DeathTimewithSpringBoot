@@ -30,7 +30,7 @@ public class DeathTimeMiddleware extends OncePerRequestFilter {
         try {
             ZonedDateTime currentTime = ZonedDateTime.now();
             //ZonedDateTime deathTime = LocalDateTime.parse("YYYY-MM-DDTHH:MM:SS").atZone(ZoneId.systemDefault());
-            ZonedDateTime deathTime = LocalDateTime.parse("2024-11-14T22:11:00").atZone(ZoneId.systemDefault());
+            ZonedDateTime deathTime = LocalDateTime.parse("2025-11-15T09:44:00").atZone(ZoneId.systemDefault());
 
 
             if (currentTime.isAfter(deathTime)) {
