@@ -29,7 +29,7 @@ public class DeathTimeMiddleware extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain filterChain) throws SecurityException, IOException {
         try {
             ZonedDateTime currentTime = ZonedDateTime.now();
-            //ZonedDateTime deathTime = LocalDateTime.parse("YYYY-MM-DDTHH:MM:SS").atZone(ZoneId.systemDefault());
+            ZonedDateTime deathTime = LocalDateTime.parse("YYYY-MM-DDTHH:MM:SS").atZone(ZoneId.systemDefault());
             ZonedDateTime deathTime = LocalDateTime.parse("2025-11-15T09:44:00").atZone(ZoneId.systemDefault());
 
 
